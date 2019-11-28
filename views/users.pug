@@ -1,0 +1,20 @@
+html
+	head
+		title=title
+body
+div
+	table
+		thead
+			tr
+				th ID
+				th Name 
+				th Email
+				th Gender
+				th Branch
+			each item in items
+				tr
+					td=item.ID
+					td=item.Name
+					td=item.Email
+					td=item.Gender
+					td=item.Branch

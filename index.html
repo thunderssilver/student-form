@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Registration Form</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Student Registration Form</h1>
+<form action="/submit" method="POST" accept-charset="utf-8">
+	<div>
+	<p><b>Name:</b></p>
+	<input type="text" name="name" value="" placeholder="Name" >
+	</div>
+	<div>
+	<p><b>ID:</b></p>
+	<input type="text" name="id" value="" placeholder="ID">
+	</div>
+	<div>
+	<p><b>Email:<b></p>
+	<input type="email" name="email" value="" placeholder="Email" >	
+	</div>
+	<p><b>Gender:</b></p>
+	<input type="radio" name="gender" value="Male">Male<br>
+	<input type="radio" name="gender" value="Female">Female<br>
+	<div>
+		<p><b>Course:</b></p>
+		<select name="course">
+			<option value="cse">CSE</option>
+			<option value="eee">EEE</option>
+			<option value="ece">ECE</option>
+			<option value="it">IT</option>
+			<option value="mech">MECH</option>
+			<option value="chem">CHEM</option>
+			<option value="biotech">BIOTECH</option>
+		</select>
+	</div>
+	<br>
+	<br>
+	<input type="submit" name="submit" value="submit">
+	<input type="reset" name="reset">
+	<br>
+	<br>
+</form>
+<a href="/users">Users</a>
+</body>
+</html>
